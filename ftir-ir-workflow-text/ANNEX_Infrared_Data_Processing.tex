@@ -1,0 +1,9 @@
+\section*{Annex X --- Python Workflow for FTIR Data Extraction and Kinetic Analysis (Text Only)}
+\textbf{Scope.} Organization of raw Thermo OMNIC \texttt{.spa} spectra, baseline/integration of pyridine bands, conversion and $\mu$mol$\cdot$g$_\mathrm{cat}^{-1}$, and kinetic extraction of $r_0$ and the apparent order vs H$_2$.
+
+\textbf{Overview (text).} 
+(1) \texttt{01\_manage\_carroucell.py}: sort \texttt{.spa}. 
+(2) \texttt{02\_extract\_integrate\_pyridine.py}: subtract first spectrum; PCHIP baseline; integrate 1505--1580~cm$^{-1}$; export CSV. 
+(3) \texttt{03\_build\_excel\_and\_umol.py}: compute conversion and $\mu$mol$\cdot$g_\mathrm{cat}^{-1}$ using $\varepsilon$ and mass JSON. 
+(4) \texttt{04\_initial\_rates\_and\_order.py}: $r_0$ from fixed-origin fit; $\ln r_0$ vs $\ln P(\mathrm{H}_2)$ (Pa) for order $n$. 
+(5) Python $\ge$3.10 with SpectroChemPy, NumPy, pandas, Matplotlib, scikit-learn, openpyxl.
