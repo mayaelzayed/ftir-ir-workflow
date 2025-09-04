@@ -2,7 +2,7 @@
 """
 Created on Thu Jan  4 17:51:54 2024
 
-@author: mlaluc
+@author: Maya
 """
 import spectrochempy as scp
 import numpy as np
@@ -163,6 +163,7 @@ csvname=f'{foldername}.csv'
 # Combine the path and filename
 full_csv_path = os.path.join(save_csv_path, csvname)
 all_data_df.to_csv(full_csv_path, index=False)
+
 
 
 
