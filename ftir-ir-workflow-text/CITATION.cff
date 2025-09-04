@@ -3,8 +3,8 @@ title: "FTIR Carroucell Data Processing"
 message: "If you use this code, please cite it as below."
 type: software
 authors:
-  - family-names: Al Saghir
-    given-names: Tareq
+  - family-names: EL ZAYED
+    given-names: Maya
 repository-code: https://github.com/USER/REPO
 license: MIT
 version: "1.0.0"
